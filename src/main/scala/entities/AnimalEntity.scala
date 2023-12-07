@@ -1,4 +1,4 @@
-package classes.entities
+package entities
 
 /*
     Interfaces da OO em Scala são declaradas como traits

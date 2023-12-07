@@ -1,3 +1,5 @@
+import entities.Gato
+
 def main(args: Array[String]): Unit = {
   // Declaração de variáveis
   val processo : String = "Processo seletivo de estágio da BLT"; // Constante
@@ -20,5 +22,6 @@ def main(args: Array[String]): Unit = {
   val areaCirculo = PI * Math.pow(raioCirculo, 2)
   println(s"A área do círculo mede $areaCirculo") // Exemplo de interpolação
 
-  
+  val gato = new Gato()
+
 }
