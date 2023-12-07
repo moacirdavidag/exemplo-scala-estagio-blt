@@ -1,5 +1,3 @@
-import entities.Gato
-
 def main(args: Array[String]): Unit = {
   // Declaração de variáveis
   val processo : String = "Processo seletivo de estágio da BLT"; // Constante
@@ -22,6 +20,20 @@ def main(args: Array[String]): Unit = {
   val areaCirculo = PI * Math.pow(raioCirculo, 2)
   println(s"A área do círculo mede $areaCirculo") // Exemplo de interpolação
 
-  val gato = new Gato()
+
+  // Exemplo de listas
+  val listaNumerosParesAteDez = List.range(2, 12, 2) // preenche a lista com base nos valores passados por parâmetro
+  println(listaNumerosParesAteDez)
+
+  val listaNumerosAteCinco = (1 to 5).toList
+  println(listaNumerosAteCinco)
+
+  // Podemos utilizar métodos nativos sob listas
+  // Como o filter, por exemplo abaixo
+
+  println(listaNumerosAteCinco.filter(x => x > 2)) // exemplo de função de callback
+
+  val listaQualquer = List(1, "Moa") // Lista podem ter diferentes tipos
+  println(listaQualquer)
 
 }
